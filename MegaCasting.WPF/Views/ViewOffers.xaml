@@ -1,0 +1,161 @@
+﻿<UserControl x:Class="MegaCasting.WPF.Views.ViewOffers"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MegaCasting.WPF.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=" 200"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock 
+            x:Name="textBlockOffers"
+            Grid.Column="0" 
+            Grid.Row="0" 
+            Text="Liste des annonces :"
+            TextAlignment="Center"
+            FontSize="20"
+            FontFamily="Segoe UI"
+            FontWeight="Bold"
+            VerticalAlignment="Center">
+        </TextBlock>
+        <ListBox x:Name="listBoxOffers"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 >
+
+
+        </ListBox>
+        <Button 
+                    Grid.Row="2"
+                    Margin="3"
+                    x:Name="buttonAddOffers"
+                    Background="Orange"
+                    BorderBrush="{x:Null}"
+                    Foreground="Black"
+                    VerticalAlignment="Top"
+                    >
+            <Grid Width="200">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <materialDesign:PackIcon Kind="Add" Foreground="White" Width="40" Height="25"></materialDesign:PackIcon>
+                <Label Grid.Column="1" Content="Ajouter" Foreground="White"/>
+            </Grid>
+        </Button>
+
+        <Grid Grid.Column="1" Grid.Row="1" Grid.RowSpan="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Column="0" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Content="Type contrat :" HorizontalAlignment="Left" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"></Label>
+                <Label Grid.Column="1" Grid.Row="0" Content="Domaine :" HorizontalAlignment="Left" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"></Label>
+                <Label Grid.Column="2" Grid.Row="0" Content="Métier :" HorizontalAlignment="Left" FontSize="14" FontFamily="Segoe UI" FontWeight="Bold"></Label>
+
+            </Grid>
+            
+            <Label Grid.Column="0" Grid.Row="1" Content="Nom :" HorizontalAlignment="Left"></Label>
+            <Label Grid.Column="0" Grid.Row="2" Content="Référence :" HorizontalAlignment="Left"></Label>
+            <Label Grid.Column="0" Grid.Row="3" Content="Date Début :" HorizontalAlignment="Left"></Label>
+
+
+            <TextBlock Grid.Column="1" Grid.Row="1" Text="Test" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="2" Text="Test" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="3" Text="Test" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+
+        </Grid>
+        <ComboBox  x:Name="comboBoxOffer" HorizontalAlignment="Left" Margin="37,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"
+                   ToolTip="Annonceurs"
+                   SelectedIndex="0"
+                   >
+            <ComboBox.ItemsSource>
+                <CompositeCollection>
+                    <ComboBoxItem>Annonceurs</ComboBoxItem>
+                </CompositeCollection>
+            </ComboBox.ItemsSource>
+        </ComboBox>
+        <Button 
+            
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Margin="3"
+                    Width="150"
+                    x:Name="buttonSaveOffers"
+                    Background="Orange"
+                    BorderBrush="{x:Null}"
+                    Foreground="Black"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    >
+            <Grid Width="200">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <materialDesign:PackIcon Kind="ContentSaveAll" Foreground="White" Width="40" Height="25"></materialDesign:PackIcon>
+                <Label Grid.Column="1" Content="Sauvegarder" Foreground="White"/>
+            </Grid>
+        </Button>
+        <Button 
+            
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Margin="3"
+                    Width="150"
+                    x:Name="buttonDeleteOffers"
+                    Background="Orange"
+                    BorderBrush="{x:Null}"
+                    Foreground="Black"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right"
+                    >
+            <Grid Width="200">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <materialDesign:PackIcon Kind="Delete" Foreground="White" Width="40" Height="25"></materialDesign:PackIcon>
+                <Label Grid.Column="1" Content="Supprimer" Foreground="White"/>
+            </Grid>
+        </Button>
+    </Grid>
+
+
+
+</UserControl>

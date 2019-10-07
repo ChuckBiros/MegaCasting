@@ -1,0 +1,34 @@
+C:\Users\estephant\source\repos\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting.DBLib.dll
+C:\Users\estephant\source\repos\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting.DBLib.pdb
+C:\Users\estephant\source\repos\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.csprojAssemblyReference.cache
+C:\Users\estephant\source\repos\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.csproj.CoreCompileInputs.cache
+C:\Users\estephant\source\repos\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.dll
+C:\Users\estephant\source\repos\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.pdb
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting.mdf
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting_log.ldf
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting.DBLib.dll.config
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting.DBLib.dll
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting.DBLib.pdb
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\bin\Debug\EntityFramework.dll
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\bin\Debug\EntityFramework.SqlServer.dll
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\bin\Debug\EntityFramework.xml
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\bin\Debug\EntityFramework.SqlServer.xml
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.csprojAssemblyReference.cache
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.csproj.CoreCompileInputs.cache
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.csproj.CopyComplete
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.dll
+Z:\IIA\E2\IIA C#\MegaCasting3\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.pdb
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting.mdf
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting_log.ldf
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting.DBLib.dll.config
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting.DBLib.dll
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\bin\Debug\MegaCasting.DBLib.pdb
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\bin\Debug\EntityFramework.dll
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\bin\Debug\EntityFramework.SqlServer.dll
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\bin\Debug\EntityFramework.xml
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\bin\Debug\EntityFramework.SqlServer.xml
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.csprojAssemblyReference.cache
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.csproj.CoreCompileInputs.cache
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.csproj.CopyComplete
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.dll
+E:\IIA\E2\IIA C#\MegaCastingSSMSSql\MegaCasting\MegaCasting.DBLib\obj\Debug\MegaCasting.DBLib.pdb
