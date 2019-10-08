@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MegaCasting.WPF.Windows;
+
 
 namespace MegaCasting.WPF.Views
 {
@@ -24,5 +26,15 @@ namespace MegaCasting.WPF.Views
         {
             InitializeComponent();
         }
+
+        #region Events
+        private void ButtonDescription_Click(object sender, RoutedEventArgs e)
+        {
+            WindowDescriptionOffers windowDescriptionOffers = new WindowDescriptionOffers();
+            windowDescriptionOffers.Show();
+        }
+
+
+        #endregion
     }
 }

@@ -24,18 +24,57 @@ namespace MegaCasting.WPF
         public MainWindow()
         {
             InitializeComponent();
+            this.MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
         }
 
         #region Events
         /// <summary>
-        /// Eteint la fenêtre principale
+        /// Ferme la fenêtre actuelle
         /// </summary>
-        /// <param name="sender">origine</param>
-        /// <param name="e">arguments</param>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+
+        /// <summary>
+        /// Réduit la fenêtre actuelle
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        /// <summary>
+        /// Maximise la fenêtre actuelle
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonMaximize_Click(object sender, RoutedEventArgs e)
+        {
+            if (WindowState == WindowState.Normal)
+            {
+                this.WindowState = WindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = WindowState.Normal;
+            }
+
+        }
+        /// <summary>
+        /// Permet de déplacer la fenêtre princpale
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainBar_MouseDown(object sender, RoutedEventArgs e)
+        {
+            this.DragMove();
+        }
+
 
         /// <summary>
         /// Affiche le panel des annonceurs

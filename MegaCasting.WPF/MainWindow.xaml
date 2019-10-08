@@ -7,10 +7,10 @@
         xmlns:views="clr-namespace:MegaCasting.WPF.Views"
         mc:Ignorable="d"
         Title="MegaCasting"
-        Height="450"
-        Width="800" 
-        MinHeight="450" 
-        MinWidth="800"
+        Height="550"
+        Width="1050" 
+        MinHeight="550" 
+        MinWidth="1050"
         ResizeMode="CanResizeWithGrip"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
@@ -33,25 +33,44 @@
             <ColumnDefinition Width="200"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-       
-        <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="OrangeRed">
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button 
-                    x:Name="buttonExit"
-                    Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
-                    Width="30" 
-                    Height="30" 
-                    Background="{x:Null}"
-                    BorderBrush="{x:Null}"
-                    Foreground="Black"
-                    Click="ButtonExit_Click"
-                    FontSize="30"
-                    >
-                    <materialDesign:PackIcon Kind="ExitToApp"></materialDesign:PackIcon>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="OrangeRed" MouseDown="MainBar_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Background="{x:Null}">
+                <Button x:Name="buttonMinimize"
+                        Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" 
+                        Width="25"
+                        Height="25"
+                        HorizontalAlignment="Center" 
+                        Foreground="White" 
+                        Background="{x:Null}"
+                        BorderBrush="{x:Null}"
+                        Click="ButtonMinimize_Click">
+                    <materialDesign:PackIcon Kind="WindowMinimize"/>
+                </Button>
+                <Button x:Name="buttonMaximize"
+                        Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" 
+                        Width="25"
+                        Height="25"
+                        HorizontalAlignment="Center" 
+                        Foreground="White" 
+                        Background="{x:Null}"
+                        BorderBrush="{x:Null}"
+                        Click="ButtonMaximize_Click">
+                    <materialDesign:PackIcon Kind="WindowMaximize"/>
+                </Button>
+                <Button x:Name="buttonExit"
+                                Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" 
+                                Width="25"
+                                Height="25"
+                                HorizontalAlignment="Center" 
+                                Foreground="White" 
+                                Background="{x:Null}"
+                                BorderBrush="{x:Null}"
+                                Click="ButtonExit_Click">
+                    <materialDesign:PackIcon Kind="CloseBox"/>
                 </Button>
             </StackPanel>
-         </Grid>
+        </Grid>
         <Grid Grid.Row="1" Grid.Column="0" Background="OrangeRed">
             <StackPanel Orientation="Vertical">
                 <Button 
@@ -113,7 +132,7 @@
                 </Button>
             </StackPanel>
         </Grid>
-        <Grid Grid.Row="0" Grid.Column="0">
+        <Grid Grid.Row="0" Grid.Column="0" MouseDown="MainBar_MouseDown">
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <TextBlock
