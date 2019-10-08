@@ -67,11 +67,12 @@ namespace MegaCasting.WPF.ViewModel
         /// <summary>
         /// Ajoute un annonceur
         /// </summary>
-        public void addAnnouncer(string name, string pseudo)
+        public void addAnnouncer(string name, string pseudo, string password)
         {
             Producer producer = new Producer();
             producer.Name = name;
             producer.UserName = pseudo;
+            producer.Password = password;
 
             this.Entities.Producers.Add(producer);
             this.Producers.Add(producer);

@@ -103,11 +103,51 @@ namespace MegaCasting.WPF.Windows
                     MessageBoxButton.YesNo);
             if(result == MessageBoxResult.Yes)
             {
-                _ViewModelViewAnnouncer.addAnnouncer(textBoxAddNom.Text, textBoxId.Text);
+                string password = GeneredPassword();
+                _ViewModelViewAnnouncer.addAnnouncer(textBoxAddNom.Text, textBoxId.Text, password);
                 this.Close();
             }
             
         }
+        #endregion
+
+        #region Methods
+
+
+        /// <summary>
+        /// Génère un mot de passe aléatoire de 8 caractère
+        /// </summary>
+        /// <returns></returns>
+        public static string GeneredPassword()
+        {
+            string caracteres = "azertyuiopqsdfghjklmwxcvbn"; // ca tu devine
+            Random selAlea = new Random(); // mon objet aléatoire
+
+
+            string password = ""; // le mot de passe a la fin
+            for (int i = 0; i < 8; i++) // 8 caracteres, la taille du mot de passes
+            {
+                // a chaque tour de boucle marOrMin va valoir sois 0 ou 1 c'est aléatoire
+                int majOrMin = selAlea.Next(2); // un nombre aléatoire qui vaut 0 ou 1
+
+                // un caractere au hazard dans la chaine (caractere transformé en string)
+                string carac = caracteres[selAlea.Next(0, caracteres.Length)].ToString();
+
+                // si le nombre vaut 0
+                if (majOrMin == 0)
+                {
+                    password += carac.ToUpper(); // on met le caracteres en majuscule
+                                                 //et on le met dans lachaine
+                }
+                else
+                {
+                    password += carac.ToLower(); //on met le caracteres en minscule et on le met dans lachaine
+                }
+            }
+            return password;
+
+        }
+
         #endregion
     }
 }
